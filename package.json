@@ -17,6 +17,6 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
-    "@codebam/cf-workers-telegram-bot": "^7.14.0"
+    "@codebam/cf-workers-telegram-bot": "^7.15.0"
   }
 }
