@@ -7,17 +7,19 @@ interface Environment {
 export default {
 	async fetch(request: Request, env: Environment, ctx: ExecutionContext): Promise<Response> {
 		const bot = new TelegramBot(env.TOKEN);
-		bot.on('start', async function (context: TelegramExecutionContext) {
-			switch (context.update_type) {
-				case 'message':
-					await context.reply('Hello World');
-					break;
+		await bot
+			.on('start', async function (context: TelegramExecutionContext) {
+				switch (context.update_type) {
+					case 'message':
+						await context.reply('Hello World');
+						break;
 
-				default:
-					break;
-			}
-			return new Response('ok');
-		});
+					default:
+						break;
+				}
+				return new Response('ok');
+			})
+			.handle(request.clone());
 		return new Response('Hello World!');
 	},
 };
