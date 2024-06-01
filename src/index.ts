@@ -1,17 +1,17 @@
 import TelegramBot, { TelegramExecutionContext } from '@codebam/cf-workers-telegram-bot';
 
 interface Environment {
-	TOKEN: string;
+	SECRET_TELEGRAM_API_TOKEN: string;
 }
 
 export default {
 	async fetch(request: Request, env: Environment, ctx: ExecutionContext): Promise<Response> {
-		const bot = new TelegramBot(env.TOKEN);
+		const bot = new TelegramBot(env.SECRET_TELEGRAM_API_TOKEN);
 		await bot
-			.on('start', async function (context: TelegramExecutionContext) {
+			.on('start', async function(context: TelegramExecutionContext) {
 				switch (context.update_type) {
 					case 'message':
-						await context.reply('Hello World');
+						await context.reply('Hello World 2');
 						break;
 
 					default:
