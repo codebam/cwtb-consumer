@@ -11,7 +11,7 @@ export default {
 			.on('start', async function(context: TelegramExecutionContext) {
 				switch (context.update_type) {
 					case 'message':
-						await context.reply('Hello World 2');
+						await context.reply('Hello World');
 						break;
 
 					default:
