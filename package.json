@@ -18,6 +18,6 @@
 		"wrangler": "^3.60.0"
 	},
 	"dependencies": {
-		"@codebam/cf-workers-telegram-bot": "^7.25.0"
+		"@codebam/cf-workers-telegram-bot": "^7.27.0"
 	}
 }
