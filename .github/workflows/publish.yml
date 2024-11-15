@@ -33,7 +33,7 @@ jobs:
           key: node-modules-${{ hashFiles('package-lock.json') }}
           restore-keys: node-modules-
       - name: cloudflare workers publish
-        uses: cloudflare/wrangler-action@v3.12.1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           preCommands: |
