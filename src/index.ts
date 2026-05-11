@@ -8,18 +8,10 @@ export default {
 	async fetch(request: Request, env: Environment, ctx: ExecutionContext): Promise<Response> {
 		const bot = new TelegramBot(env.SECRET_TELEGRAM_API_TOKEN);
 		await bot
-			.on('start', async function(context: TelegramExecutionContext) {
-				switch (context.update_type) {
-					case 'message':
-						await context.reply('Hello World');
-						break;
-
-					default:
-						break;
-				}
-				return new Response('ok');
+			.command('start', async (ctx) => {
+				await ctx.reply('Hello World');
 			})
-			.handle(request.clone());
+			.handle(request);
 		return new Response('Hello World!');
 	},
 };
