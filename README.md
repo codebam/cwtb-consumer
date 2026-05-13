@@ -28,7 +28,7 @@ This is a template for creating a Telegram Bot using `@codebam/cf-workers-telegr
    ```
 
 6. **Set Webhook**:
-   `https://<your-worker>.<your-subdomain>.workers.dev/<SECRET_TELEGRAM_API_TOKEN>?command=set`
+   `https://<your-worker>.<your-subdomain>.workers.dev/<SECRET_TELEGRAM_API_TOKEN>/setWebhook`
 
 ## Project Structure
 
