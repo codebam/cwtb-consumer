@@ -5,6 +5,7 @@ This is a template for creating a Telegram Bot using `@codebam/cf-workers-telegr
 ## Getting Started
 
 1. **Install dependencies**:
+
    ```sh
    npm install
    ```
@@ -13,16 +14,19 @@ This is a template for creating a Telegram Bot using `@codebam/cf-workers-telegr
    Edit `wrangler.toml` and change the `name` to your bot's name.
 
 3. **Set your Telegram Token**:
+
    ```sh
    npx wrangler secret put SECRET_TELEGRAM_API_TOKEN
    ```
 
 4. **Develop**:
+
    ```sh
    npm run dev
    ```
 
 5. **Deploy**:
+
    ```sh
    npm run deploy
    ```
