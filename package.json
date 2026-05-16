@@ -8,16 +8,27 @@
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",
+		"lint": "eslint src",
+		"format": "prettier --write src test *.json",
+		"format:check": "prettier --check src test *.json",
 		"cf-typegen": "wrangler types"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.16.4",
-		"@cloudflare/workers-types": "^4.20260511.1",
+		"@cloudflare/vitest-pool-workers": "^0.16.6",
+		"@eslint/js": "^10.0.1",
+		"@types/node": "^25.8.0",
+		"@typescript-eslint/eslint-plugin": "^8.59.3",
+		"@typescript-eslint/parser": "^8.59.3",
+		"eslint": "^10.4.0",
+		"eslint-config-prettier": "^10.1.8",
+		"globals": "^17.6.0",
+		"prettier": "^3.8.3",
 		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.59.3",
 		"vitest": "4.1.6",
-		"wrangler": "^4.90.1"
+		"wrangler": "^4.92.0"
 	},
 	"dependencies": {
-		"@codebam/cf-workers-telegram-bot": "^12.1.0"
+		"@codebam/cf-workers-telegram-bot": "^12.6.2"
 	}
 }
