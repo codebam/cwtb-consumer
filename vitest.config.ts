@@ -7,11 +7,9 @@ export default defineConfig({
 			wrangler: { configPath: './wrangler.toml' },
 		}),
 	] as any,
-	test: {
-		poolOptions: {
-			workers: {
-				wrangler: { configPath: './wrangler.toml' },
-			},
+	poolOptions: {
+		workers: {
+			wrangler: { configPath: './wrangler.toml' },
 		},
 	} as any,
 });
