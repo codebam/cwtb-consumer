@@ -173,3 +173,4 @@ dist
 
 # direnv
 .direnv/
+.npmrc
