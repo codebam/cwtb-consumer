@@ -1,6 +1,6 @@
 {
 	"name": "cf-workers-telegram-bot-consumer",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -31,6 +31,6 @@
 		"wrangler": "^4.92.0"
 	},
 	"dependencies": {
-		"@codebam/cf-workers-telegram-bot": "^12.6.13"
+		"@codebam/cf-workers-telegram-bot": "^12.6.15"
 	}
 }
